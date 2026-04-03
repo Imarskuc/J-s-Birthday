@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOANNA IS 18 — EMANUEL DID THIS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- LANDING: full punch -->
+    <div id="landing" tabindex="0" aria-label="Press anywhere to continue">
+      <div class="landing-box">
+        <h1> JOANNA IS 18 LEGAL </h1>
+        <p class="sub">APRIL 4, 2026 — THE WORLD TREMBLES</p>
+        <p class="cta">[ PRESS  TO UNLEASH ]</p>
+      </div>
+    </div>
+
+    <div id="emanuel-shout" aria-hidden="true">EMANUEL DID THIS</div>
+
+    <main id="main-content" class="is-hidden">
+      <!-- LETTER: customize in #letterContent -->
+      <section class="block block--dark" aria-labelledby="letter-heading">
+        <h2 id="letter-heading">💌 BIRTHDAY LETTER something cooking</h2>
+        <!-- ═══ CUSTOMIZE: letter text below (edit paragraphs) ═══ -->
+        <div id="letterContent" class="letter-pending">
+          <p>LISTEN HERE, JOANNA.</p>
+          <p>YOU'RE 18. THAT MEANS YOU CAN DO DUMB THINGS LEGALLY NOW.</p>
+          <p>BUT YOU WON'T. BECAUSE YOU'RE ACTUALLY AMAZING.</p>
+          <p>
+            I WATCHED YOU GROW FROM A GREMLIN INTO A FULLY FUNCTIONAL HUMAN WITH
+            EXCELLENT TASTE IN MUSIC.
+          </p>
+          <p>YOU DESERVE CAKE, CHAOS, AND DANIEL CAESAR ON REPEAT.</p>
+          <p>HAPPY BIRTHDAY. I'M NOT CRYING. YOU'RE CRYING.</p>
+          <p>— EMANUEL 🖤</p>
+        </div>
+        <button type="button" class="btn-brutal" id="revealLetterBtn">
+          [ REVEAL YOU FOOL ]
+        </button>
+      </section>
+
+      <!-- MEMORIES: customize .memories-grid -->
+      <section class="block block--red" aria-labelledby="mem-heading">
+        <h2 id="mem-heading">💥 MEMORIES</h2>
+        <p style="font-size: 0.75rem; margin-top: -0.5rem; opacity: 0.95">
+          (CLICK A CARD TO EDIT — YOU'RE WELCOME, EMANUEL)
+        </p>
+        <div class="memories-grid" id="memoriesGrid">
+          <div class="memory-card" contenteditable="true" spellcheck="false">
+            [ 2023 – YOU LIED. I FORGIVE YOU. ]
+          </div>
+          <div class="memory-card" contenteditable="true" spellcheck="false">
+            [ 2024 – YOU INTRODUCED ME TO DANIEL CAESAR. THANK YOU. ]
+          </div>
+          <div class="memory-card" contenteditable="true" spellcheck="false">
+            [ 2026 – YOU TURN 18. I'M PROUD. DON'T GET ARRESTED. ]
+          </div>
+        </div>
+      </section>
+
+      <!-- SPECIAL: customize #specialList -->
+      <section class="block" aria-labelledby="special-heading">
+        <h2 id="special-heading">WHY YOU'RE SPECIAL — FACTS ONLY</h2>
+        <ul class="special-list" id="specialList">
+          <li>✓ YOU LAUGH LIKE A <strong>VILLAIN</strong></li>
+          <li>✓ YOU <strong>REMEMBER EVERYTHING</strong></li>
+          <li>✓ YOU'RE ANNOYINGLY GOOD AT <strong>BEING YOU</strong></li>
+          <li>✓ YOU MAKE PEOPLE FEEL <strong>SEEN</strong></li>
+          <li class="strike">
+            ✗ YOU STILL OWE ME $6 (I FORGIVE YOU TODAY)
+          </li>
+        </ul>
+        <button type="button" class="btn-brutal btn-brutal--green" id="sendLoveBtn">
+          [ 💥 SEND LOVE (AGGRESSIVELY) 💥 ]
+        </button>
+      </section>
+
+      <!-- CANDLE -->
+      <section class="block block--black" aria-labelledby="wish-heading">
+        <h2 id="wish-heading" style="border-color: #fff; color: #fff">
+          🕯️ MAKE A WISH
+        </h2>
+        <button type="button" class="btn-brutal" id="openCandleBtn">
+          [ 🧱 BLOW THE CANDLE, COWARD 🧱 ]
+        </button>
+      </section>
+    </main>
+
+    <!--
+      Daniel Caesar — Always (visible mini player — browsers block hidden autoplay)
+      Track: https://open.spotify.com/track/2LlOeW5rVcvl3QcPNPcDus?si=2DpjdDUOTqaWLhb0_nduIg
+      Change track → SPOTIFY_EMBED_TRACK_ID in script.js + iframe src below + spotifyOpenLink href
+    -->
+    <aside id="spotifyDock" class="spotify-dock" aria-label="Play Always by Daniel Caesar">
+      <p class="spotify-dock-title">DANIEL CAESAR — ALWAYS</p>
+      <p class="spotify-dock-hint">
+        TAP THE GREEN PLAY BUTTON IN THE BAR. AUTOPLAY IS BROKEN ON PURPOSE (BLAME CHROME).
+      </p>
+      <div class="spotify-dock-frame">
+        <iframe
+          id="spotifyPlayer"
+          src="about:blank"
+          width="100%"
+          height="152"
+          style="border: 0; display: block; width: 100%"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          title="Spotify — Always by Daniel Caesar"
+        ></iframe>
+      </div>
+      <a
+        id="spotifyOpenLink"
+        class="spotify-dock-link"
+        href="https://open.spotify.com/track/2LlOeW5rVcvl3QcPNPcDus?si=2DpjdDUOTqaWLhb0_nduIg"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        OR OPEN IN SPOTIFY / APP →
+      </a>
+    </aside>
+
+    <div id="loveOverlay" aria-live="assertive">
+      <p class="love-msg">YOU'RE LOVED. DEAL WITH IT.</p>
+    </div>
+
+    <div id="candleModal" role="dialog" aria-modal="true" aria-labelledby="candleTitle">
+      <div class="candle-box">
+        <h2 id="candleTitle" style="border: none; padding: 0; margin: 0">WISH PROTOCOL</h2>
+        <pre class="candle-ascii" aria-hidden="true">       🕯️
+      🔥🔥
+  &lt;/&gt;===== &lt;/&gt;</pre>
+        <p>CLICK THE FLAME. DO IT.</p>
+        <div class="flame-zone" id="flameZone" tabindex="0" role="button">🔥🔥</div>
+        <p class="wish-msg" id="wishMsg">
+          WISH GRANTED. JOANNA, YOU'RE MAGIC. DON'T FORGET IT.
+        </p>
+        <button type="button" class="btn-brutal modal-close" id="closeCandleModal">
+          [ CLOSE ]
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
